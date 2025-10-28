@@ -53,9 +53,26 @@ resource "aws_s3_bucket" "bucket" {
 ## Configure AWS CLI (use IAM credentials)
 1. Create an IAM user in the AWS Console:
      - Go to IAM → Users → Add user.
+
+<img width="1532" height="736" alt="Image" src="https://github.com/user-attachments/assets/ab17b21d-3f2d-4d4c-a0f3-87df62f2fec0" />
+
+---
+ <img width="1890" height="702" alt="Image" src="https://github.com/user-attachments/assets/4cf9ab76-ba03-41ff-8014-01a4f9ae420b" />
+---
+
      - Enable "Programmatic access".
+
      - Attach existing policies → search and attach `AmazonS3FullAccess`.
      - Create user and download the Access key ID and Secret access key (CSV).
+---
+<img width="1869" height="741" alt="Image" src="https://github.com/user-attachments/assets/e4ff1969-348d-45bf-8da5-1da8b787ad6b" />
+
+<img width="1861" height="674" alt="Image" src="https://github.com/user-attachments/assets/b2fddbab-63fb-4a20-9520-a041cb1d6344" />
+---
+<img width="1462" height="773" alt="Image" src="https://github.com/user-attachments/assets/6e271ac8-5f11-4b17-8818-202c5b50ea23" />
+
+<img width="1353" height="450" alt="Image" src="https://github.com/user-attachments/assets/8a20df1e-e9e9-4984-a407-72daee0552e3" />
+---
 2. Locally run:
      `aws configure`
      - Enter Access Key ID, Secret Access Key, default region (e.g., us-east-1), and default output (json).
