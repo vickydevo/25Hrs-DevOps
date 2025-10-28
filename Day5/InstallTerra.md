@@ -25,9 +25,9 @@ The most reliable way to install Terraform on Ubuntu is by using the official Ha
 2.  **Download the HashiCorp GPG key:**
 
     ```bash
-    wget -O- https://apt.releases.hashicorp.com/gpg | \
-gpg --dearmor | \
-sudo tee /usr/share/keyrings/hashicorp-archive-keyring.gpg > /dev/null
+        wget -O- https://apt.releases.hashicorp.com/gpg | \
+        gpg --dearmor | \
+        sudo tee /usr/share/keyrings/hashicorp-archive-keyring.gpg > /dev/null
     ```
 <img width="1400" height="612" alt="Image" src="https://github.com/user-attachments/assets/3aae4d47-8198-41aa-8ed1-3be841298a4c" />
 3.  **Add the official HashiCorp repository:**
@@ -43,12 +43,9 @@ sudo tee /etc/apt/sources.list.d/hashicorp.list
 
     ```bash
     sudo apt update
-    sudo apt install terraform
-
-
-    
+    sudo apt install terraform 
     ```
-        <img width="1918" height="792" alt="Image" src="https://github.com/user-attachments/assets/760c5802-ef88-47cd-856d-6f179ce272aa" />
+<img width="1918" height="792" alt="Image" src="https://github.com/user-attachments/assets/760c5802-ef88-47cd-856d-6f179ce272aa" />
 
 5.  **Update and install Terraform:**
 ```bash
