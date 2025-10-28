@@ -43,12 +43,16 @@ resource "aws_s3_bucket" "bucket" {
 ```
 
 ## Install AWS CLI
-- Linux:
+- **Linux:**
     - Download/unzip installer:
+    ```bash
         curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
+        sudo apt  install unzip -y
         unzip awscliv2.zip
         sudo ./aws/install
-- Windows (PowerShell): run the AWS CLI MSI installer from AWS (msi URL available in AWS docs)
+    ```
+- **Windows (PowerShell):**
+      run the AWS CLI MSI installer from AWS (msi URL available in AWS docs)
 
 ## Configure AWS CLI (use IAM credentials)
 1. Create an IAM user in the AWS Console:
@@ -72,10 +76,18 @@ resource "aws_s3_bucket" "bucket" {
 <img width="1462" height="773" alt="Image" src="https://github.com/user-attachments/assets/6e271ac8-5f11-4b17-8818-202c5b50ea23" />
 
 <img width="1353" height="450" alt="Image" src="https://github.com/user-attachments/assets/8a20df1e-e9e9-4984-a407-72daee0552e3" />
+
+
 ---
+
 2. Locally run:
-     `aws configure`
+    ```bash
+     aws configure
+    ```
      - Enter Access Key ID, Secret Access Key, default region (e.g., us-east-1), and default output (json).
+
+<img width="1502" height="231" alt="Image" src="https://github.com/user-attachments/assets/558794f2-2546-44c4-a0b8-b07b5a5874de" />
+---
 
 ## Apply Terraform
 1. In the directory with `main.tf`:
