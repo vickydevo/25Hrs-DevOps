@@ -36,7 +36,7 @@ provider "aws" {
 ```hcl
 
 resource "aws_s3_bucket" "bucket" {
-    bucket = "terraform-vignan-1234" # replace with your unique name
+    bucket = "terraform-vignan-bucket-30-nov" # replace with your unique name
 
 }
 
@@ -83,6 +83,7 @@ resource "aws_s3_bucket" "bucket" {
 2. Locally run:
     ```bash
      aws configure
+     aws configure --profile my-dev-user
     ```
      - Enter Access Key ID, Secret Access Key, default region (e.g., us-east-1), and default output (json).
 
