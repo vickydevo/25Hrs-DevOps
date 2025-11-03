@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
       - name: springboot
-        image: vignan91/spring-test:8081
+        image: vignan91/spring-test:30aug
         ports:
         - containerPort: 8081
         resources:
@@ -40,7 +40,7 @@ spec:
     app: spring-np
   ports:
     - protocol: TCP
-      port: 8082        # Updated service port
+      port: 8081        # Updated service port
       targetPort: 8081  # Container port remains the same
       nodePort: 30037 # Optional, specify a port in the 30000-32767 range 
 

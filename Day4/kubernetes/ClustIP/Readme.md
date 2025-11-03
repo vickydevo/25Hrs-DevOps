@@ -27,7 +27,7 @@ spec:
       spec:
          containers:
          - name: springboot
-            image: vignan91/spring-test:8081
+            image: vignan91/spring-test:30aug
             ports:
             - containerPort: 8081
 ```

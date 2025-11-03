@@ -37,7 +37,7 @@ Kubernetes exists to manage containerized applications at scale, providing autom
 Microservices is an architectural pattern where an application is structured as a collection of small, independently deployable services. Each service performs a specific function and communicates with other services over well-defined APIs.
 
 # Architecture & Components of Kubernetes
-![Image](https://github.com/user-attachments/assets/37b83818-1c3e-4198-92c8-16c882d269c8)
+![Image](https://github.com/user-attachments/assets/9643419f-cb37-46ac-a3c0-3459efb5b338)
 
 ## Master Node Components
 

@@ -2,13 +2,19 @@
 
 ## Basic Commands
 ```bash
+kubectl api-versions
+kubectl api-resources
+
+kubectl version --short
 kubectl help
 kubectl cluster-info
 kubectl get all
-kubectl version --short
+kubectl get all --show-kind --output=wide
+
 kubectl config view
-kubectl api-resources
-kubectl api-versions
+kubectl config current-context
+kubectl config get-contexts
+kubectl config use-context <context-name>
 ```
 
 ## Applying and Managing YAML Files
