@@ -52,7 +52,7 @@ kubectl describe deployment <deployment-name>
 kubectl create deployment <deployment-name> --image=<image-name>
 kubectl set image deployment/<deployment-name> <container-name>=<new-image>
 kubectl scale deployment <deployment-name> --replicas=<number>
-kubectl rollout status deployment/<deployment-name>
+kubectl rollout status deployment/springboot-deployment-np
 kubectl rollout undo deployment/<deployment-name>
 kubectl delete deployment <deployment-name>
 ```
