@@ -169,7 +169,12 @@ Since Minikube is running inside an EC2 instance, the NodePort service won't be 
 1. **Enable Port Forwarding on Minikube**
 
    ```bash
-   kubectl port-forward service/my-app-service 8080:80
+   # Exposing directly to outside (browser )
+   kubectl port-forward service/my-app-service 8080:80 --address 0.0.0.0 
+
+   kubectl port-forward service/my-app-service 8080:80 
+
+   
    ```
 
    ![Image](https://github.com/user-attachments/assets/f0f8c1a0-9007-4b27-bced-e4131f508468)

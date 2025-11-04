@@ -33,6 +33,13 @@ Add the community chart repository and update your local chart list.
 helm repo add prometheus-community https://prometheus-community.github.io/helm-charts
 helm repo update
 ```
+few commands of helm repo and path
+
+```bash
+helm repo list
+helm env
+```
+
 
 ### 🚀 Step 3: Deploy the Chart
 

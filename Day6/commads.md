@@ -1,10 +1,15 @@
-minikube ssh
-curl <ip-node-exporter>:port/metrics | grep containers | grep init container
-   then 
-
 
 pod alway crashes
  kubectl run crashing-pod --image=busybox --restart=Always -- /bin/false
+
+
+minikube ssh
+curl <ip-node-exporter>:port/metrics | grep containers | grep init container
+   then 
+promQL query in prometheus dashboard
+-------------------------------------
+
+kube_pod_container_status_restarts_total{pod="crashing-pod", container="crashing-pod"}
 
  query promql
 

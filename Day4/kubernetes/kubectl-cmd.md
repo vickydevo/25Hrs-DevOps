@@ -64,7 +64,12 @@ kubectl describe service <service-name>
 kubectl expose deployment <deployment-name> --type=<service-type> --port=<port> --target-port=<target-port>
 kubectl delete service <service-name>
 ```
-
+## Working namespaces 
+```bash
+kubectl get namespaces
+# or the shorter version:
+kubectl get ns
+```
 ## Working with ReplicaSets
 ```bash
 kubectl get replicasets
