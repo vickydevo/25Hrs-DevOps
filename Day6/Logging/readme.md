@@ -91,7 +91,22 @@ helm install fluent-bit fluent/fluent-bit -f fluentbit-values.yaml -n logging
 - Use the username and password retrieved in step 6 to log in.
 - Once logged in, create a new data view in Kibana and explore the logs collected from your Kubernetes cluster.
 
+Check service logs
 
+```bash
+ kubectl logs service-a-deployment-86dbf5497f-vmp57 -n dev
+```
+check fluentbit is get logs and collected elasticsearch
+```bash
+ kubectl logs fluent-bit-8flv7 -n logging
+```
+Port fowarding kibana to access on Browser
+
+```bash
+kubectl port-forward service/kibana-kibana 5601:5601 -n logging --address=0.0.0.0 &
+```
+
+![alt text](image-1.png)
 
 ## 🧼 Clean Up
 ```bash
